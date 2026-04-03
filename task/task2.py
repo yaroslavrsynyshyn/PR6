@@ -1,7 +1,7 @@
 class BankAccount:
     def __init__(self, owner, balance=0):
         self.owner = owner
-        self.__balance = balance   # приватний атрибут
+        self.__balance = balance
 
     def deposit(self, amount):
         if amount > 0:
@@ -31,7 +31,7 @@ acc1.withdraw(200)
 print(f"Баланс {acc1.owner}: {acc1.get_balance()} грн\n")
 
 print(f"Баланс {acc2.owner}: {acc2.get_balance()} грн")
-acc2.withdraw(600)  # спроба зняти більше ніж є
+acc2.withdraw(600)
 acc2.deposit(100)
 print(f"Баланс {acc2.owner}: {acc2.get_balance()} грн\n")
 
